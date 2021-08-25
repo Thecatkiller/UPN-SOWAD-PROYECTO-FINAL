@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I.E Amadeo Mozart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+            footer{
+                width:100%;
+                height:100px;
+                background-color:#cc1415;
+                color: #ffffff;
+                }
+            nav.navbar {
+                background-color: #1f30ef;
+                }
+        </style>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-default fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid">
+                    <div class="col">
+                        <a class="navbar-brand" href="#"><img src="/images/logo2.png" width="50" height="30"></a>
+                    </div>
+                    <div class="col col-xxl-2">
+                        <ul class="navbar-nav my-0 my-sm-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><b><font color="white">(01) 415 6060</font></b><span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b><font color="white"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;User</font></b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#staticBackdrop">Mi Perfil</a>
+                                    <a class="dropdown-item" href="#">Cursos Históricos</a>
+                                    <a class="dropdown-item" href="#">Historial de pagos</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Cerrar sesion</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b><font color="white">Inicio</font></b></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b><font color="white">Solicitudes</font></b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Consolidado de Matrícula</a>
+                                    <a class="dropdown-item" href="#">Documentos virtuales</a>
+                                    <a class="dropdown-item" href="#">Otros documentos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b><font color="white">Servicios</font></b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b><font color="white">Correo I.E</font></b></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b><font color="white">Acerca de</font></b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Contáctanos</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- tarjeta administracion 1-->
+        <h3 class="text-center"><b><font color="white">Relleno</font></b></h3>
+        <div class="container mt-5">
+            <div class="container-fluid mt-5">
+                <h2 class="text-center"><b><font color="blue">Bienvenido, seleccione una opción</font></b></h2>
+            </div>
+            <div class="card-deck mt-5">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="/images/cursos2.png" alt="Card image cap" width="200" height="175"></a>
+                    <div class="card-body" style="background-color:#E7E7E7">
+                        <h5 class="card-title"><font color="blue"><b>Mis Cursos</b></font></h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="images/horario.jpg" alt="Card image cap" width="200" height="175"></a>
+                    <div class="card-body" style="background-color:#E7E7E7">
+                        <h5 class="card-title"><font color="blue"><b>Mis Horarios</b></font></h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="images/calificaciones.jpg" alt="Card image cap" width="200" height="175"></a>
+                    <div class="card-body" style="background-color:#E7E7E7">
+                        <h5 class="card-title"><font color="blue"><b>Mis Calificaciones</b></font></h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="images/aula_virtual.png" alt="Card image cap" width="200" height="175"></a>
+                    <div class="card-body" style="background-color:#E7E7E7">
+                        <h5 class="card-title"><font color="blue"><b>Aula Virtual</b></font></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- tarjeta administracion 2-->
+        <div class="container mt-3">
+            <div class="card-deck">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="images/matricula.jpg" alt="Card image cap" width="200" height="175"></a>
+                    <div class="card-body" style="background-color:#E7E7E7">
+                        <h5 class="card-title"><font color="blue"><b>Matrícula en línea</b></font></h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="images/pagos.png" alt="Card image cap" width="200" height="175"></a>
+                    <div class="card-body" style="background-color:#E7E7E7">
+                        <h5 class="card-title"><font color="blue"><b>Mis Pagos</b></font></h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="images/biblioteca.jpg" alt="Card image cap" width="200" height="175"></a>
+                    <div class="card-body" style="background-color:#E7E7E7">
+                        <h5 class="card-title"><font color="blue"><b>Biblioteca Virtual</b></font></h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="images/xd.jpg" alt="Card image cap" width="200" height="175"></a>
+                    <div class="card-body" style="background-color:#E7E7E7">
+                        <h5 class="card-title"><font color="blue"><b>Contacto In-Line</b></font></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOCKQUOTE -->
+        <figure class="text-center mt-5">
+            <blockquote class="blockquote">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><small>Experiencia.</small></li>
+                    <li class="list-inline-item"><small>Identidad.</small></li>
+                    <li class="list-inline-item"><small>Formación.</small></li>
+                    <li class="list-inline-item"><small>Puntualidad.</small></li>
+                    <li class="list-inline-item"><small>Aprendizaje.</small></li>
+                    <li class="list-inline-item"><small>Oportunidades.</small></li>
+                </ul>
+            </blockquote>
+        </figure>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <br>
+            <h4 class="text-center"><b><font color="white">© IEP "AMADEO MOZART", LA FLORESTA DE ORQUENDO - CALLAO PERÚ</font></b></h4>
+            <h6 class="text-center"><b><a href="#"> 2021-2022 SOLWEB GROUP 3 Enterprise, Todos los derechos reservados</a></b></h6>
+        </footer>
+    </main>
+    <!--Para Bootstrap 4.6 -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script>
+            $( document ).ready(function() {
+                $('.card').mouseenter(function(){
+                    $(this).addClass("bg-primary text-while");
+                });
+                $('.card').mouseout(function(){
+                    $(this).removeClass("bg-primary text-while");
+                });
+            });
+    </script>
+</body>
+</html>
