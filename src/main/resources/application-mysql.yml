@@ -9,6 +9,9 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+        hbm2ddl:
+          import_files: META-INF/sql/mysql/import.sql
+
     show-sql: true
     hibernate:
       ddl-auto: create-drop
