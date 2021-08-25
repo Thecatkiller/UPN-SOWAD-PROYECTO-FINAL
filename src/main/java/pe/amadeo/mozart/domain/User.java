@@ -7,27 +7,21 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
-/**
- * Notas del estudiante
- * */
+
 @Entity
-@Table(name = "grades")
+@Table(name = "users")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Grades implements Serializable {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    private AcademicPeriod academicPeriod;
+    private String username;
 
-    @OneToOne
-    private CoursePerGrade coursePerGrade;
-
-    private double score;
+    private String password;
 
 }

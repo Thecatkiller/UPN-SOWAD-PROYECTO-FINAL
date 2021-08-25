@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://${DATABASE_HOST:localhost};database=${DATABASE_NAME:COLEGIO_MOZART};
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: ${USERNAME_DB}
+    password: ${PASSWORD_DB}
+
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2008Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop

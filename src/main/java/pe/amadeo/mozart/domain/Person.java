@@ -8,7 +8,9 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+@Table(name = "persons")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -33,5 +35,8 @@ public abstract class Person implements Serializable {
 
     @Column(length = 15)
     private String documentNumber;
+
+    @OneToOne
+    private User user;
 
 }

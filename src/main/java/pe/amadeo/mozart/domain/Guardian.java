@@ -11,18 +11,18 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 @Entity
-@PrimaryKeyJoinColumn(name = "teacherId")
-@Table(name = "teachers")
+@PrimaryKeyJoinColumn(name = "guardianId")
+@Table(name = "guardians")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Teacher extends Person implements Serializable {
-
-    private double salary;
+public class Guardian extends Person implements Serializable {
 
     private String phoneNumber;
 
     private String email;
+
+    private String address;
 
 }
